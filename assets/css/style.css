@@ -3,6 +3,11 @@ a {
     color: white;
 }
 
-login-h {
-    background-color: rgb(132, 134, 137);
+.navbar-custom {
+    background-color: rgb(151, 86, 74);
 }
+
+.navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: aliceblue;
+        }
