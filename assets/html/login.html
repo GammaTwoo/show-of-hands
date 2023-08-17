@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/login.css" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
     <div class="text-center">
-      <h1 class="bg-secondary bg-darken-md text-white">Login</h1>
+      <h1 class>Login</h1>
     </div>
-    <form>
+    <form class="container col-4">
         <div class="form-group col">
           <label for="user" class="row-sm-2 row-form-label">Username</label>
           <div class="row-sm-10">
@@ -24,6 +24,11 @@
             <input type="text" class="form-control" id="password" placeholder="Password">
           </div>
         </div>
+        <button class="btn btn-dark">Log In</button>
       </form>
+      <div class="text-center">
+        <a href="../../index.html">To Home</a>
+        <a href="./sign-up.html">Sign Up</a>
+      </div>
 </body>
 </html>

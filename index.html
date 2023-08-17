@@ -23,17 +23,36 @@
             <div class = "col-4 border border-dark rounded">
                 <h3>Create Poll</h3>
                 <div class="options-container">
-                    <input class ="form-control"> <!-- option one for the poll-->
-                    <input class="form-control"> <!-- option two -->
+                    <label>Add poll subject below:</label>
+
+                    <input class ="form-control" id="pollQuestion"> <!-- option one for the poll-->
+
+                    <label>Add poll options below:</label>
+
+                    <div id="pollOptions">
+                        <div class="form-group">
+                            <input class="form-control" name="option" placeholder="Option 1">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" name="option" placeholder="Option 2">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-dark" onclick="addOption()">+</button> <!-- adds an option -->
+
+                    <button class="btn btn-dark" onclick="createPoll()">Submit</button> <!-- submits the poll to be posted -->
                 </div>
-                <button class="btn btn-dark">+</button> <!-- adds an option -->
-                <button class="btn btn-dark">Submit</button> <!-- submits the poll to be posted -->
             </div>
             <div class = "col-8 border border-dark rounded">
+                <section>
+                    <h2>Poll Results</h2>
+                    <div id="pollResults"></div>
+                </section>
                 <h3>Posts</h3>
                 <!-- MongoDB Post Info -->
             </div>
         </div>
     </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
